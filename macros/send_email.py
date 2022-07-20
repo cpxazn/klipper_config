@@ -28,18 +28,18 @@ def send_email(user = None, pwd = None, to = "", subject = "", body = ""):
     SUBJECT_EMAIL = subject
 
     try:
-        #print(requests.get('http://fluidd-ender/printer/objects/query?print_stats=filename').json())
-        query = requests.get('http://fluidd-ender/printer/objects/query?print_stats=filename').json()
+        #print(requests.get('http://localhost/printer/objects/query?print_stats=filename').json())
+        query = requests.get('http://localhost/printer/objects/query?print_stats=filename').json()
         TEXT = datetime.now().strftime("%m/%d/%Y %H:%M:%S")  + "\n" + query["result"]["status"]["print_stats"]["filename"] + "\n" + body
     except Exception as e:
         print("Unable to get filename from moonraker",e)
 
     try:
-        #print(requests.get('http://fluidd-ender/printer/info').json())
-        query = requests.get('http://fluidd-ender/printer/info').json()
+        #print(requests.get('http://localhost/printer/info').json())
+        query = requests.get('http://localhost/printer/info').json()
         SUBJECT_EMAIL = query["result"]["hostname"] + " - " + SUBJECT_EMAIL
     except Exception as e:
-        print("Unable to get filename from moonraker",e)
+        print("Unable to get hostname from moonraker",e)
 
     # Prepare email message
     message = """From: %s\nTo: %s\nSubject: %s\n\n%s
@@ -70,29 +70,24 @@ args = parser.parse_args()
 
 # If email password argument was provided but not email login
 if not args.email_password:
-    #logger.error('--email-password not specified')
     print("--email-password not specified")
-    sys.exit(0) # Exit Script
+    sys.exit(1) # Exit Script
 
 if not args.email_login:
-    #logger.error('--email_login not specified')
     print("--email_login not specified")
-    sys.exit(0) # Exit Script
+    sys.exit(2) # Exit Script
 
 if not args.to:
-    #logger.error('--to not specified')
     print("--to not specified")
-    sys.exit(0) # Exit Script
+    sys.exit(3) # Exit Script
 
 if not args.subject:
-    #logger.error('--subject not specified')
     print("--subject not specified")
-    sys.exit(0) # Exit Script
+    sys.exit(4) # Exit Script
 
 if not args.body:
-    #logger.error('--body not specified')
     print("--body not specified")
-    sys.exit(0) # Exit Script
+    sys.exit(5) # Exit Script
 
 
 send_email(args.email_login, args.email_password, args.to, args.subject, args.body)
