@@ -1,13 +1,28 @@
 ## Adds klipper macros for
-- Email on completion
-- Email on filament runout
-- Git add, commit, push, pull
-- Idle power off
-- M600, Filament runout, pause, resume
-- Creating new bed mesh after every X prints
+- Email/text notification on completion/filament runout (macros/email.cfg, macros/events.cfg, macros/send_email.py, vars.sh)
+- Git add, commit, push, pull (macros/git.cfg)
+- Idle power off (macros/power.cfg)
+- M600, Filament runout, pause, resume (macros/events.cfg)
+- START_PRINT with purge line, and END_PRINT commands (macros/events.cfg)
+- Creating new bed mesh after every X prints (macros/events.cfg, variables.cfg)
   
 ## Pre-requisite
-gcode_shell_command.sh required from https://github.com/th33xitus/kiauh/tree/master/scripts. Place in ~/klipper/klippy/extras.
+- gcode_shell_command.sh required from https://github.com/th33xitus/kiauh/tree/master/scripts. Place in ~/klipper/klippy/extras.
+- Make sure you don't have duplicate conflicts with required.cfg
+- Update printer.cfg to include the additional cfg files
+```
+Sample includes
+
+#####################################
+#              MACROS               #
+#####################################
+[include macros/*.cfg]
+
+#####################################
+#            REQUIRED               #
+#####################################
+[include required.cfg]
+```
 
 ## Configure Email
 - Update vars.sh with your email details.
