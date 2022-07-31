@@ -1,7 +1,7 @@
 ## Adds klipper macros for
 - Email on completion
 - Email on filament runout
-- Git add, commit, push, pull, status
+- Git add, commit, push, pull
 - Idle power off
 - M600, Filament runout, pause, resume
 - Creating new bed mesh after every X prints
@@ -57,3 +57,6 @@ restart_klipper_when_powered: True
 ## Configure git repository
 - If you want to utilize the git pull/push macros, setup your git repository in ~/klipper_config
 - Create directory with your hostname in ~/klipper_config/backups/<hostname> where it will backup your printer specific config files
+  
+## Re-create bed mesh after X prints
+- Update prints_til_probe value in variables.cfg in order set your preferred X number of probes before re-creating bed mesh
