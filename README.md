@@ -4,5 +4,5 @@
 - Git add, commit, push, pull, status
 - Idle power off tasmota
 - M600, Filament runout, pause, resume
-- Creating new bed mesh after every 5 prints
+- Creating new bed mesh after every X prints
   
