@@ -7,7 +7,7 @@
 - Creating new bed mesh after every X prints (macros/events.cfg, variables.cfg)
 
 ## Pre-requisite
-- gcode_shell_command.sh required from https://github.com/th33xitus/kiauh/tree/master/scripts. Place in ~/klipper/klippy/extras.
+- gcode_shell_command is required. Install using kiauh from Advanced menu.
 - If you don't have a smart switch for auto power off, then don't take macros/power.cfg
 - If you don't need git push/pull macros, then don't take macros/git.cfg
 - Make sure you don't have duplicate conflicts with required.cfg
