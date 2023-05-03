@@ -4,12 +4,13 @@
 
 # Instructions
 1. Identify and separate different polarity magnets. There should be 6 of each. Same polarity will stack on top of each other (Flat side of one magnet sits on concave side of another). Different polarity magnets will attract on both concave sides.
-2. Bridge this jumper to enable LED since we are using 5v <img src="https://github.com/tanaes/whopping_Voron_mods/blob/main/pcb_klicky/Images/5v.jpeg" width=400>
-3. Add 3x heat set inserts to Connection_Fanhead_Klicky.stl
-4. Add 3x heat set inserts to probe-heatset.stl
-5. Add 1x M3 screw from the FYSETC kit into the hole in probe-heatset.stl
-6. Insert main PCB into Connection_Fanhead_Klicky.stl
-7. Insert magnet and screw into main PCB, you don't have to know the exact polarity of the magnets, but make sure you are using opposite polarities when diagram shows N/S <img src="https://github.com/tanaes/whopping_Voron_mods/blob/main/pcb_klicky/Images/magnets.jpeg" width=400>
+2. Bridge this jumper to enable LED since we are using 5v 
+<img src="https://github.com/tanaes/whopping_Voron_mods/blob/main/pcb_klicky/Images/5v.jpeg" width=400>
+4. Add 3x heat set inserts to Connection_Fanhead_Klicky.stl
+5. Add 3x heat set inserts to probe-heatset.stl
+6. Add 1x M3 screw from the FYSETC kit into the hole in probe-heatset.stl
+7. Insert main PCB into Connection_Fanhead_Klicky.stl
+8. Insert magnet and screw into main PCB, you don't have to know the exact polarity of the magnets, but make sure you are using opposite polarities when diagram shows N/S <img src="https://github.com/tanaes/whopping_Voron_mods/blob/main/pcb_klicky/Images/magnets.jpeg" width=400>
 9. Insert probe-heatset.stl onto the switch PCB
 10. Insert magnet and screw into switch PCB, following diagram from step 7
 11. If magnets were attached properly, both PCBs should attract each other
