@@ -1,5 +1,5 @@
 # Notes
-By default, the probe will NOT dock automatically after homing. It will remember that the probe was already attached so if you home again, it will not try to reattach, it will automatically go to home Z. The fact that the probe is attached will be remembered even if the printer is turned off. You can even start a print with the probe attached **as long as you call BED_MESH_CALIBRATE**, it will dock the probe after taking bed mesh. If you don't call BED_MESH_CALIBRATE, then **make sure you update user variables to dock after home**. Just be careful not to move Z too low while it is attached or it may mess up the switch.
+By default, the probe will NOT dock automatically after homing. It will remember that the probe was already attached so if you home again, it will not try to reattach, it will automatically go to home Z. The fact that the probe is attached will be remembered even if the printer is turned off. Be careful not to move Z too low while it is attached or it may mess up the switch. You can even start a print with the probe attached **as long as you call BED_MESH_CALIBRATE**, it will dock the probe after taking bed mesh. If you don't call BED_MESH_CALIBRATE, then **make sure you update user variables to dock after home**.
 
 # Pre-Requisites
 1. Make sure your sensorless homing works well
