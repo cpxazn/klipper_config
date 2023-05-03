@@ -1,8 +1,8 @@
-Pre-Requisites
+# Pre-Requisites
 1. Make sure your sensorless homing works well
 2. Make sure your X axis homes to the right. This is setup in [stepper_x]. Both position_max and position_endstop should be setup properly.
 
-Instructions
+# Instructions
 1. Identify and separate different polarity magnets. There should be 6 of each. Same polarity will stack on top of each other (Flat side of one magnet sits on concave side of another). Different polarity magnets will attract both concave sides.
 2. Bridge this jumper to enable LED since we are using 5v
 ![5v jumper](https://github.com/tanaes/whopping_Voron_mods/blob/main/pcb_klicky/Images/5v.jpeg)
