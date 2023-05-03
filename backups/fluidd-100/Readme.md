@@ -11,7 +11,7 @@
 5. Add 1x M3 screw from the FYSETC kit into the hole in probe-heatset.stl
 6. Insert main PCB into Connection_Fanhead_Klicky.stl
 7. Insert magnet and screw into main PCB, you don't have to know the exact polarity of the magnets, but make sure you are using opposite polarities when diagram shows N/S
-![Magnets](https://github.com/tanaes/whopping_Voron_mods/blob/main/pcb_klicky/Images/magnets.jpeg)
+<img src="https://github.com/tanaes/whopping_Voron_mods/blob/main/pcb_klicky/Images/magnets.jpeg" width=400>
 8. Insert probe-heatset.stl onto the switch PCB
 9. Insert magnet and screw into switch PCB, following diagram from step 7
 10. If magnets were attached properly, both PCBs should attract each other
