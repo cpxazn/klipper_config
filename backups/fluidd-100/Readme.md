@@ -1,3 +1,6 @@
+# Notes
+By default, the probe will NOT dock automatically after homing. It will remember that the probe was already attached so if you home again, it will not try to reattach, it will automatically go to home Z. The fact that the probe is attached will be remembered even if the printer is turned off. You can even start a print with the probe attached **as long as you call BED_MESH_CALIBRATE**, it will dock the probe after taking bed mesh. If you don't call BED_MESH_CALIBRATE, then **make sure you update user variables to dock after home**. Just be careful not to move Z too low while it is attached or it may mess up the switch.
+
 # Pre-Requisites
 1. Make sure your sensorless homing works well
 2. Make sure your X axis homes to the right. This is setup in [stepper_x]. Both position_max and position_endstop should be setup properly.
@@ -30,7 +33,6 @@
 23. Adjust the user variables at the top. Update Dock Location if required. You may want to lower some speeds until you have everything setup correctly
 24. (Optional) Add [screws.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/screws.cfg) to enable additional functionality. Adjust according to your bed
 25. Run G28 to home all axis. Get ready to power off in case anything goes wrong
-26. By default, the probe will NOT dock automatically after homing. It will remember that the probe was already attached so if you home again, it will not try to reattach, it will automatically go to home Z. The fact that the probe is attached will be remembered even if the printer is turned off. You can even start a print with the probe attached as long as you call BED_MESH_CALIBRATE, it will dock the probe after taking bed mesh. Just be careful not to move Z too low while it is attached or it may mess up the switch.
 27. You can run a DOCK_PROBE command to test docking
 28. Run ATTACH_PROBE command to reattach after the printer is already homed
 29. Once you are satisfied with attaching and docking, when the probe is attached, setup the probe Z-offset by using PROBE_CALIBRATE command. Once it probes the bed, use your hands to manually detatch the probe, then continue lower the nozzle until you have setup the offset. Then you can reattach the probe. and run a SAVE_CONFIG.
