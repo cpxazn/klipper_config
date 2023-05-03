@@ -37,3 +37,4 @@ By default, the probe will NOT dock automatically after homing. It will remember
 27. You can run a DOCK_PROBE command to test docking
 28. Run ATTACH_PROBE command to reattach after the printer is already homed
 29. Once you are satisfied with attaching and docking, when the probe is attached, setup the probe Z-offset by using PROBE_CALIBRATE command. Once it probes the bed, use your hands to manually detatch the probe, then continue lower the nozzle until you have setup the offset. Then you can reattach the probe. and run a SAVE_CONFIG.
+30. Reduce your Y bed size in your slicer to prevent accidentally attaching the probe while printing. I'm using 160.
