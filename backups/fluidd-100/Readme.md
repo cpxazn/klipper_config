@@ -30,9 +30,10 @@ By default, the probe will NOT dock automatically after homing. It will remember
 20. Manually move the Y axis backwards to test whether it is able to attach the probe
 21. Manually move the Y axis backwards to see if the probe can easily be seated back in the dock, then move the toolhead sideways to release
 22. Once you are satisfied with the dock position, add [homing.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/homing.cfg) macros to your config
-23. Adjust the user variables at the top. Update Dock Location if required. You may want to lower some speeds until you have everything setup correctly
-24. (Optional) Add [screws.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/screws.cfg) to enable additional functionality. Adjust according to your bed
-25. Run G28 to home all axis. Get ready to power off in case anything goes wrong
+23. Create a [variables.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/variables.cfg). Remove last_probe and prints_til_probe unless you are also using all of my [other macros](https://github.com/cpxazn/klipper_config) under macros directory.
+24. Adjust the user variables at the top. Update Dock Location if required. You may want to lower some speeds until you have everything setup correctly
+25. (Optional) Add [screws.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/screws.cfg) to enable additional functionality. Adjust according to your bed
+26. Run G28 to home all axis. Get ready to power off in case anything goes wrong
 27. You can run a DOCK_PROBE command to test docking
 28. Run ATTACH_PROBE command to reattach after the printer is already homed
 29. Once you are satisfied with attaching and docking, when the probe is attached, setup the probe Z-offset by using PROBE_CALIBRATE command. Once it probes the bed, use your hands to manually detatch the probe, then continue lower the nozzle until you have setup the offset. Then you can reattach the probe. and run a SAVE_CONFIG.
