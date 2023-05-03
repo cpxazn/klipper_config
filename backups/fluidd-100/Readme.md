@@ -16,8 +16,8 @@
 9. Insert magnet and screw into switch PCB, following diagram from step 7
 10. If magnets were attached properly, both PCBs should attract each other
 11. Attach Connection_Fanhead_Klicky.stl to your toolhead
-12. Use JST crimp to crimp wires for BLtouch pins if using SKR Pico
-13. Setup probe in klipper. Use [probe.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/probe.cfg) as example
+12. Use JST crimp to crimp and attach wires to [BLtouch pins](https://github.com/bigtreetech/SKR-Pico/blob/master/Hardware/BTT%20SKR%20Pico%20V1.0-PIN.pdf) if using SKR Pico
+13. Setup [probe] section in klipper. Use [probe.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/probe.cfg) as example
 14. While the probe is attached, the LED should light blue if you followed step 2
 15. Use QUERY_ENDSTOPS command to test the switch. Resting state should show OPEN. Press the switch and it should show TRIGGERED. Detach the probe and it should show TRIGGERED.
 16. Attach KlickyMount.stl to the frame with M3x20mm
