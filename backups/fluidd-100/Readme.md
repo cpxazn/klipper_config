@@ -29,3 +29,4 @@
 22. Once you are satisfied with the dock position, add [homing.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/homing.cfg) macros to your config
 23. Adjust the user variables at the top. Update Dock Location if required. You may want to lower some speeds until you have everything setup correctly.
 24. (Optional) Add [screws.cfg](https://github.com/cpxazn/klipper_config/blob/main/backups/fluidd-100/screws.cfg) to enable additional functionality. Adjust according to your bed.
+25. Run G28 to home all axis. Get ready to power off in case anything goes wrong.
