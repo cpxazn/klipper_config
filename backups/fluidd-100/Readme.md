@@ -24,7 +24,7 @@ By default, the probe will NOT dock automatically after homing. It will remember
 14. While the probe is attached, the LED should light blue if you followed step 2
 15. Use QUERY_ENDSTOPS command to test the switch. Resting state should show OPEN. Press the switch and it should show TRIGGERED. Detach the probe and it should show TRIGGERED
 16. Attach KlickyMount.stl to the frame with M3x20mm
-17. Attach any magnet to the rear of dock-front_insert.stl. This magnet attracts the screw on probe-heatset.stl for docking
+17. Attach any magnet to the rear of dock-front_insert.stl. You may want to use some kind of adhesive as this push fit will loosen over time. This magnet attracts the screw on probe-heatset.stl for docking
 18. Use 2x M3x40mm screws and nuts to secure dock-front_insert.stl and MountSpacer.stl to the mount
 19. Adjust the height so it has a couple mm clearance below the magnets on Connection_Fanhead_Klicky.stl
 20. Manually move the Y axis backwards to test whether it is able to attach the probe
