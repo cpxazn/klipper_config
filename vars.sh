@@ -1,9 +1,10 @@
 #Email to send from
-export email_user=test@gmail.com
-export email_pwd=
+export email_user=cpxazn@gmail.com
+export email_pwd=wimmssmosvxmmzjt
 
 #Email recipient for print completion
-export email_to=test@gmail.com
+export email_to=cpxazn@gmail.com
 
 #Email recipient for filament runout
-export email_to2=test@gmail.com,0123456789@vtext.com
+export email_to2=cpxazn@gmail.com,6787990884@vtext.com
+export python_path=~/klippy-env/bin/
