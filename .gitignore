@@ -2,14 +2,5 @@ vars.sh
 variables.cfg
 config_*/
 KAMP
-KAMP_Settings.cfg
-adxl345.cfg
-bed.cfg
+*.cfg*
 crowsnest.conf*
-extruder.cfg
-fan.cfg
-filament_sensor.cfg
-printer*
-probe.cfg
-rgb.cfg
-stepper.cfg
