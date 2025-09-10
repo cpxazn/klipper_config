@@ -4,3 +4,4 @@ config_*/
 KAMP
 *.cfg*
 crowsnest.conf*
+moonraker.conf*
