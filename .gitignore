@@ -1,3 +1,7 @@
 vars.sh
 variables.cfg
 config_*/
+KAMP
+*.cfg*
+crowsnest.conf*
+moonraker.conf*
